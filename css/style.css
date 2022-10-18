@@ -23,25 +23,71 @@ fieldset {
 	margin: 0;
 }
 
-* {
-	outline: 1px solid red;
-}
-
 body {
+	font-family: "Roboto", sans-serif;
 }
 
 .container {
 	min-height: 100vh;
 
 	display: grid;
-	grid-template-columns: 200px 1fr;
+	grid-template-columns: 250px 1fr;
 	grid-template-rows: 150px 1fr;
 }
 
+/* ||| DASHBOARD ||| */
+
 .dashboard {
 	background-color: var(--sky-blue);
+	padding: 15px;
+	color: #fff;
 
 	grid-row: 1 / -1;
+	display: grid;
+	align-content: start;
+	row-gap: 50px;
+}
+
+.dashboard-top,
+.dashboard-link {
+	display: grid;
+	grid-template-columns: 40px 1fr;
+	align-items: center;
+	column-gap: 8px;
+}
+
+.dashboard-top-icon,
+.dashboard-link-icon {
+	justify-self: center;
+}
+
+.dashboard-top-icon {
+	width: 40px;
+	height: 40px;
+}
+
+.dashboard h1 {
+	font-size: 24px;
+}
+
+.dashboard-links {
+	display: grid;
+	row-gap: 15px;
+}
+
+.dashboard-link {
+	color: inherit;
+	text-decoration: none;
+}
+
+.dashboard-link-icon {
+	width: 22px;
+	height: 22px;
+}
+
+.dashboard-link-text {
+	font-size: 18px;
+	font-weight: 700;
 }
 
 .top {

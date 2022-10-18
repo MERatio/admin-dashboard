@@ -27,12 +27,16 @@ body {
 	font-family: "Roboto", sans-serif;
 }
 
+.bg-yellow {
+	background-color: yellow;
+}
+
 .container {
 	min-height: 100vh;
 
 	display: grid;
 	grid-template-columns: 250px 1fr;
-	grid-template-rows: 150px 1fr;
+	grid-template-rows: 165px 1fr;
 }
 
 /* ||| DASHBOARD ||| */
@@ -90,8 +94,78 @@ body {
 	font-weight: 700;
 }
 
+/* ||| TOP ||| */
+
 .top {
-	background-color: yellow;
+	padding: 0px 60px;
+
+	display: grid;
+	column-gap: 10px;
+}
+
+.top-first,
+.top-second {
+	display: grid;
+	grid-template-columns: auto 1fr repeat(3, auto);
+	align-items: center;
+	column-gap: 20px;
+}
+
+.magnifying-glass-icon,
+.bell-icon {
+	width: 22px;
+	height: 22px;
+	color: #000;
+}
+
+.search-input {
+	min-width: 100px;
+	max-width: 580px;
+	background-color: var(--slate);
+	border: none;
+	border-radius: 40px;
+	padding: 5px;
+}
+
+.profile-picture-container,
+.profile-picture-container-lg {
+	border-radius: 50%;
+}
+
+.profile-picture-container {
+	width: 40px;
+	height: 40px;
+}
+
+.full-name {
+	font-size: 1.1rem;
+	font-weight: 700;
+}
+
+.profile-picture-container-lg {
+	width: 60px;
+	height: 60px;
+}
+
+.greeting {
+	font-size: 0.9rem;
+	font-weight: 700;
+
+	display: grid;
+	row-gap: 3px;
+}
+
+.full-name-and-at {
+	font-size: 1.4rem;
+}
+
+.btn-primary {
+	font-weight: 500;
+	color: #fff;
+	background-color: var(--sky-blue);
+	padding: 10px 28px;
+	border: none;
+	border-radius: 100px;
 }
 
 .main {

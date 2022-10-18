@@ -104,7 +104,7 @@ body {
 /* ||| TOP ||| */
 
 .top {
-	padding: 0px 60px;
+	padding-left: 40px;
 
 	display: grid;
 	column-gap: 10px;
@@ -115,7 +115,11 @@ body {
 	display: grid;
 	grid-template-columns: auto 1fr repeat(3, auto);
 	align-items: center;
-	column-gap: 20px;
+	column-gap: 24px;
+}
+
+.top-first {
+	padding-right: 80px;
 }
 
 .magnifying-glass-icon,
@@ -127,7 +131,7 @@ body {
 
 .search-input {
 	min-width: 100px;
-	max-width: 580px;
+	max-width: 560px;
 	background-color: var(--slate);
 	border: none;
 	border-radius: 40px;
@@ -147,6 +151,10 @@ body {
 .full-name {
 	font-size: 1.1rem;
 	font-weight: 700;
+}
+
+.top-second {
+	padding-right: 60px;
 }
 
 .profile-picture-container-lg {

@@ -1,3 +1,8 @@
+:root {
+	--sky-blue: #1992d4;
+	--slate: #e2e8f0;
+}
+
 html {
 	box-sizing: border-box;
 }
@@ -16,4 +21,33 @@ h1,
 fieldset {
 	padding: 0;
 	margin: 0;
+}
+
+* {
+	outline: 1px solid red;
+}
+
+body {
+}
+
+.container {
+	min-height: 100vh;
+
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	grid-template-rows: 150px 1fr;
+}
+
+.dashboard {
+	background-color: var(--sky-blue);
+
+	grid-row: 1 / -1;
+}
+
+.top {
+	background-color: yellow;
+}
+
+.main {
+	background-color: var(--slate);
 }

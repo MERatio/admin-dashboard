@@ -1,7 +1,6 @@
 :root {
 	--sky-blue: #1992d4;
 	--slate: #e2e8f0;
-	--yellow: #eab308;
 	--box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.1);
 	--border-radius: 8px;
 }
@@ -30,8 +29,9 @@ body {
 	font-family: "Roboto", sans-serif;
 }
 
-.bg-yellow {
-	background-color: yellow;
+.bg-yellow,
+.trending:nth-child(2) .profile-picture-container {
+	background-color: #facc15;
 }
 
 .container {
@@ -232,7 +232,7 @@ body {
 .project {
 	padding: 35px 20px 20px;
 	background-color: #fff;
-	border-left: 8px solid var(--yellow);
+	border-left: 8px solid #eab308;
 
 	display: grid;
 	grid-template-rows: repeat(2, auto) 1fr;
@@ -327,10 +327,6 @@ body {
 
 .trending:nth-child(1) .profile-picture-container {
 	background-color: #e0f2fe;
-}
-
-.trending:nth-child(2) .profile-picture-container {
-	background-color: var(--yellow);
 }
 
 .trending:nth-child(3) .profile-picture-container {

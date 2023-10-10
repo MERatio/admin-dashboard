@@ -3,6 +3,7 @@
 		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 	--blue: #1992d4;
 	--light-gray: #e2e8f0;
+	--yellow: #facc15;
 }
 
 html {
@@ -19,10 +20,41 @@ body {
 	box-sizing: inherit;
 }
 
+.avatar-container {
+	border-radius: 50%;
+}
+
+.avatar-container-small {
+	width: 40px;
+	height: 40px;
+}
+
+.avatar-container-medium {
+	width: 60px;
+	height: 60px;
+}
+
+.avatar-container-yellow {
+	background-color: var(--yellow);
+}
+
+.btn {
+	font-weight: 500;
+	color: #fff;
+	padding: 9px 0;
+	border: 0;
+	border-radius: 18px;
+	width: 95px;
+}
+
+.bg-blue {
+	background-color: var(--blue);
+}
+
 .container {
 	min-height: 100vh;
 	display: grid;
-	grid-template-rows: 125px 1fr;
+	grid-template-rows: 170px 1fr;
 	grid-template-columns: 250px 1fr;
 }
 
@@ -57,10 +89,14 @@ body {
 	gap: 24px;
 }
 
-.sidebar-link-icon {
-	fill: #fff;
+.sidebar-link-icon,
+.header-icon {
 	width: 22px;
 	height: 22px;
+}
+
+.sidebar-link-icon {
+	fill: #fff;
 }
 
 .dashboard-link {
@@ -75,8 +111,74 @@ body {
 }
 
 .header {
+	padding: 0px 40px;
 	grid-row: 1;
 	grid-column: 2;
+	display: grid;
+	grid-template-rows: repeat(2, auto);
+	grid-template-columns: 6fr 4fr;
+	z-index: 1;
+	box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+.header-cell {
+	display: grid;
+	align-items: center;
+}
+
+.header-cell-1 {
+	grid-template-columns: auto 1fr;
+	gap: 15px;
+}
+
+#search {
+	font-size: 1.1rem;
+	padding: 5px 10px;
+	background-color: var(--light-gray);
+	border: 0;
+	border-radius: 15px;
+	width: 100%;
+}
+
+.header-cell-2 {
+	padding-right: 15%;
+	grid-auto-flow: column;
+	justify-content: end;
+	gap: 30px;
+}
+
+.header-cell-2 a {
+	font-weight: 700;
+	color: inherit;
+	text-decoration: none;
+}
+
+.header-cell-3 {
+	grid-auto-flow: column;
+	justify-content: start;
+	gap: 20px;
+}
+
+.greetings {
+	font-weight: 700;
+	display: grid;
+	gap: 4px;
+	margin: 0;
+}
+
+.greetings *:nth-child(1) {
+	font-size: 0.8rem;
+}
+
+.greetings *:nth-child(2) {
+	margin: 0;
+	font-size: 1.3rem;
+}
+
+.header-cell-4 {
+	grid-auto-flow: column;
+	justify-content: center;
+	gap: 25px;
 }
 
 .main {

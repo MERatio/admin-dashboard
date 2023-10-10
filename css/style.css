@@ -205,7 +205,8 @@ body {
 }
 
 .project-list,
-.announcement-list {
+.announcement-list,
+.trending-list {
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -218,7 +219,8 @@ body {
 }
 
 .project,
-.announcement-list {
+.announcement-list,
+.trending-list {
 	border-radius: 6px;
 	box-shadow: var(--box-shadow);
 }
@@ -290,4 +292,49 @@ body {
 	font-size: 0.8rem;
 	color: var(--gray-text);
 	margin: 0;
+}
+
+.trending-list {
+	padding: 20px;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.trending-link {
+	text-decoration: none;
+	display: grid;
+	grid-auto-flow: column;
+	justify-content: start;
+	gap: 15px;
+}
+
+.trending-list li:nth-child(1) .avatar-container {
+	background-color: #e0f2fe;
+}
+
+.trending-list li:nth-child(3) .avatar-container {
+	background-color: #a3a3a3;
+}
+
+.trending-list li:nth-child(4) .avatar-container {
+	background-color: #fda4af;
+}
+
+.profile-text {
+	display: grid;
+	align-content: center;
+	align-items: center;
+	gap: 1px;
+}
+
+.profile-handler {
+	font-size: 0.9rem;
+	color: #000;
+}
+
+.profile-name {
+	font-size: 0.8rem;
+	color: var(--gray-text);
 }

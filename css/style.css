@@ -3,7 +3,9 @@
 		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 	--blue: #1992d4;
 	--light-gray: #e2e8f0;
+	--gray-text: #636363;
 	--yellow: #facc15;
+	--dark-yellow: #f0b429;
 }
 
 html {
@@ -185,4 +187,62 @@ body {
 	background-color: var(--light-gray);
 	grid-row: 2 / -1;
 	grid-column: 2;
+	display: grid;
+	grid-template-columns: 7fr 3fr;
+}
+
+.main h2 {
+	margin: 0 0 10px 0;
+	font-size: 1.2rem;
+}
+
+.projects-section {
+	padding: 30px 20px;
+}
+
+.project-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 20px;
+}
+
+.project {
+	padding: 30px 20px 20px 20px;
+	background-color: #fff;
+	border-left: 7px solid var(--dark-yellow);
+	border-radius: 6px;
+	min-height: 200px;
+	display: grid;
+	grid-template-rows: auto auto 1fr;
+}
+
+.project-header {
+	font-size: 1rem;
+	margin: 0 0 5px 0;
+}
+
+.project-text {
+	font-size: 0.9rem;
+	color: var(--gray-text);
+	margin: 0 0 auto 0;
+}
+
+.project-buttons {
+	place-self: end;
+	display: flex;
+	gap: 15px;
+}
+
+.project-button {
+	border: none;
+	background: none;
+	width: 35px;
+	height: 35px;
+}
+
+.project-button svg {
+	fill: #333;
 }
